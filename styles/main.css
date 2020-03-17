@@ -26,10 +26,14 @@ body {
   display: flex;
   flex-direction: column;
   height: 100vh;
+  align-items: center;
+  width: 1170px;
+  margin: 0 auto;
 }
 
 .window-action {
   background: #e5e3e6;
+  width: 100%;
 }
 
 /* menu-info-partecipants */
@@ -50,8 +54,72 @@ body {
 
 .video-partecipants {
  flex-grow: 1;
+ width: 100%;
+ max-width: 100%;
+ padding: 10px 0 20px;
+
+ display: flex;
+ flex-wrap: wrap;
 }
+
+.video-partecipants .video-user {
+  position: relative;
+  flex-basis: 25%;
+  background: #666;
+  border: 3px solid black;
+  transition: border .6s;
+}
+
+.video-partecipants .video-user:hover {
+  border-color: rgba(255, 255, 255, 0.8);
+}
+
+.video-partecipants .video-user.active {
+  border-color: #d8eca4;
+}
+
+.video-partecipants .video-user img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video-partecipants .video-user .name {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 6px 3px;
+  font-size: 15px;
+  display: none;
+}
+
+.video-partecipants .video-user.active .name {
+  display: block;
+}
+
+.video-partecipants .video-user i {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 6px 3px;
+  font-size: 15px;
+  display: block;
+}
+
+.video-partecipants .video-user.active i {
+  display: none;
+}
+
+
+/* bottom-action-menu */
 
 .bottom-action-menu {
   background: #212224;
+  width: 100%;
+  padding: 10px 0;
 }
