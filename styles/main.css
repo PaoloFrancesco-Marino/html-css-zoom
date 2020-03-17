@@ -119,7 +119,58 @@ body {
 /* bottom-action-menu */
 
 .bottom-action-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background: #212224;
   width: 100%;
   padding: 10px 0;
+}
+
+.bottom-action-menu .self-actions ul,
+.bottom-action-menu .chat-actions ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.bottom-action-menu .self-actions ul li:first-child,
+.bottom-action-menu .chat-actions ul li:first-child {
+  margin-left: 15px;
+}
+
+.bottom-action-menu .self-actions ul li,
+.bottom-action-menu .chat-actions ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.bottom-action-menu .self-actions ul li span,
+.bottom-action-menu .chat-actions ul li span {
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.bottom-action-menu .self-actions ul li a,
+.bottom-action-menu .chat-actions ul li a {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.bottom-action-menu .self-actions ul li a i:hover,
+.bottom-action-menu .chat-actions ul li a i:hover {
+  color: red;
+}
+
+.bottom-action-menu .close-actions a {
+  display: inline-block;
+  text-decoration: none;
+  color: red;
+  margin-right: 15px;
 }
