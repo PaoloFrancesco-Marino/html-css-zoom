@@ -1,0 +1,57 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+  background: #000;
+}
+
+/* utilities */
+.text-center {
+  text-align: center;
+}
+
+.ps-relative {
+  position: relative;
+}
+
+/* Zoom Interface  */
+
+#container-flex {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.window-action {
+  background: #e5e3e6;
+}
+
+/* menu-info-partecipants */
+.menu-info-partecipants {
+  padding: 10px 0 20px;
+}
+
+.menu-info-partecipants .non-video-text::after {
+  content: '';
+  display: inline-block;
+  border: 6px solid transparent;
+  border-top-color: #fff;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+/* video-partecipants */
+
+.video-partecipants {
+ flex-grow: 1;
+}
+
+.bottom-action-menu {
+  background: #212224;
+}
